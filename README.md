@@ -94,11 +94,12 @@ You can also use the automated bootstrap script which seeds the DB, builds the W
 
 ## ?? Cloud Deployment Guide
 
-To get a live link for your GitHub portfolio, you can deploy this application for free using **Koyeb** (for the Java app) and **Aiven** (for the MySQL database).
+To get a live link for your GitHub portfolio, you can deploy this application for free using **Koyeb** (for the Java app) and **TiDB Serverless** (for the MySQL database).
 
 ### 1. Provision a Free MySQL Database
-1. Go to [Aiven](https://aiven.io/) and create a free MySQL 8 service.
-2. Get your connection details: **Host**, **Port**, **User**, **Password**, and **Database Name**.
+1. Go to [TiDB Cloud](https://tidbcloud.com/) and create a free account.
+2. Create a new **Serverless Tier** cluster (this provides a generous free MySQL-compatible database without region limits).
+3. Click "Connect" and get your connection details: **Host**, **Port**, **User**, and **Password**.
 
 ### 2. Deploy the Application
 We have included a Dockerfile that packages the application into an executable Tomcat container.
@@ -108,7 +109,7 @@ We have included a Dockerfile that packages the application into an executable T
 4. Set the container port to 8080.
 5. Add the following **Environment Variables** so the app can connect to your new database:
    - EVENTFLOW_APP_ENVIRONMENT = production
-   - EVENTFLOW_DB_URL = jdbc:mysql://<your-aiven-host>:<port>/<dbname>?useSSL=true
-   - EVENTFLOW_DB_USERNAME = <your-aiven-user>
-   - EVENTFLOW_DB_PASSWORD = <your-aiven-password>
+   - EVENTFLOW_DB_URL = jdbc:mysql://<your-tidb-host>:<port>/test?useSSL=true
+   - EVENTFLOW_DB_USERNAME = <your-tidb-user>
+   - EVENTFLOW_DB_PASSWORD = <your-tidb-password>
 6. Deploy! Koyeb will build the image and give you a live URL.
