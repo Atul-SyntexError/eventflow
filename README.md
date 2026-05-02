@@ -94,7 +94,7 @@ You can also use the automated bootstrap script which seeds the DB, builds the W
 
 ## ?? Cloud Deployment Guide
 
-To get a live link for your GitHub portfolio, you can deploy this application for free using **Koyeb** (for the Java app) and **TiDB Serverless** (for the MySQL database).
+To get a live link for your GitHub portfolio, you can deploy this application for free using **Render** (for the Java app) and **TiDB Serverless** (for the MySQL database).
 
 ### 1. Provision a Free MySQL Database
 1. Go to [TiDB Cloud](https://tidbcloud.com/) and create a free account.
@@ -103,13 +103,13 @@ To get a live link for your GitHub portfolio, you can deploy this application fo
 
 ### 2. Deploy the Application
 We have included a Dockerfile that packages the application into an executable Tomcat container.
-1. Create a free account on [Koyeb](https://www.koyeb.com/) (or Render).
-2. Click **Create Web Service** and connect your GitHub repository.
-3. Choose **Dockerfile** as the build method.
-4. Set the container port to 8080.
-5. Add the following **Environment Variables** so the app can connect to your new database:
-   - EVENTFLOW_APP_ENVIRONMENT = production
-   - EVENTFLOW_DB_URL = jdbc:mysql://<your-tidb-host>:<port>/test?useSSL=true
-   - EVENTFLOW_DB_USERNAME = <your-tidb-user>
-   - EVENTFLOW_DB_PASSWORD = <your-tidb-password>
-6. Deploy! Koyeb will build the image and give you a live URL.
+1. Create a free account on [Render](https://render.com/).
+2. Click **New +** and select **Web Service**.
+3. Connect your GitHub repository.
+4. Render will automatically detect the **Dockerfile**.
+5. Scroll down to **Environment Variables** and add these so the app can connect to your database:
+   - `EVENTFLOW_APP_ENVIRONMENT` = `production`
+   - `EVENTFLOW_DB_URL` = `jdbc:mysql://<your-tidb-host>:<port>/test?useSSL=true`
+   - `EVENTFLOW_DB_USERNAME` = `<your-tidb-user>`
+   - `EVENTFLOW_DB_PASSWORD` = `<your-tidb-password>`
+6. Click **Create Web Service**. Render will build the image and give you a live `.onrender.com` URL!
