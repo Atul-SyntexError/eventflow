@@ -1,0 +1,89 @@
+:root {
+  color-scheme: light;
+  --font-sans: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --surface-canvas: #f3f0e8;
+  --surface-subtle: #faf7f1;
+  --surface-card: #fffdf9;
+  --surface-strong: #e7e0d3;
+  --surface-overlay: rgba(20, 29, 26, 0.48);
+
+  --text-strong: #1c221d;
+  --text-base: #33413a;
+  --text-muted: #607067;
+  --text-soft: #849088;
+
+  --accent: #0f6c5d;
+  --accent-strong: #0b564b;
+  --accent-soft: #dff3ed;
+  --accent-contrast: #f4fffb;
+
+  --info: #2458a6;
+  --info-soft: #e7effc;
+  --success: #18794e;
+  --success-soft: #e3f5eb;
+  --warning: #a66117;
+  --warning-soft: #fff1df;
+  --danger: #b42318;
+  --danger-soft: #fde9e7;
+
+  --border-subtle: #ddd5c6;
+  --border-strong: #c7bcaa;
+  --ring: rgba(15, 108, 93, 0.24);
+
+  --shadow-soft: 0 14px 40px rgba(45, 57, 51, 0.08);
+  --shadow-raised: 0 18px 50px rgba(33, 42, 38, 0.12);
+
+  --radius-sm: 0.6rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.4rem;
+  --radius-pill: 999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 2.5rem;
+  --space-9: 3rem;
+  --space-10: 4rem;
+
+  --container-max: 84rem;
+  --sidebar-width: 18rem;
+  --topbar-height: 5.25rem;
+  --transition-fast: 140ms ease;
+  --transition-base: 220ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+  }
+}
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --surface-canvas: #0a0e0c;
+  --surface-subtle: #141a17;
+  --surface-card: #1c221d;
+  --surface-strong: #252b27;
+  --surface-overlay: rgba(0, 0, 0, 0.6);
+
+  --text-strong: #f3f0e8;
+  --text-base: #d9d5cd;
+  --text-muted: #99a59d;
+  --text-soft: #66756e;
+
+  --accent: #199e89;
+  --accent-strong: #23c4ab;
+  --accent-soft: #124d43;
+  --accent-contrast: #041f1a;
+
+  --border-subtle: #2d3833;
+  --border-strong: #3d4943;
+}

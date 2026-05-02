@@ -1,0 +1,131 @@
+.status-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(199, 188, 170, 0.74);
+  color: var(--text-base);
+}
+
+.status-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 0 rgba(24, 121, 78, 0.38);
+  animation: pulse 1.8s infinite;
+}
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  padding: var(--space-5);
+  background: rgba(20, 29, 26, 0.52);
+}
+
+.dialog[hidden] {
+  display: none;
+}
+
+.dialog-card {
+  width: min(100%, 34rem);
+  padding: var(--space-6);
+  border-radius: calc(var(--radius-lg) + 0.2rem);
+  background: var(--surface-card);
+  border: 1px solid rgba(221, 213, 198, 0.84);
+  box-shadow: var(--shadow-raised);
+}
+
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.toast-stack {
+  position: fixed;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  z-index: 95;
+  display: grid;
+  gap: var(--space-3);
+  width: min(22rem, calc(100vw - 2rem));
+}
+
+.toast {
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-raised);
+  border: 1px solid rgba(221, 213, 198, 0.74);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.toast-success {
+  border-color: rgba(24, 121, 78, 0.22);
+}
+
+.toast-info {
+  border-color: rgba(36, 88, 166, 0.2);
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  min-height: 0.95rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, #ece6db 25%, #f6f1e8 37%, #ece6db 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.8s infinite;
+}
+
+.skeleton-lg {
+  min-height: 7rem;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton-sm {
+  width: 8rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(24, 121, 78, 0.38);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(24, 121, 78, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(24, 121, 78, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-dot,
+  .skeleton {
+    animation: none;
+  }
+}

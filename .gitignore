@@ -1,0 +1,15 @@
+target/
+
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+
+*.log
+
+.env
+.env.*
+
+eventflow.properties
+eventflow.local.properties

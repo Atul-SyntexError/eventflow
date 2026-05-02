@@ -1,0 +1,11 @@
+{
+  "subject": "EventFlow planning baseline",
+  "fact": "The repository uses root AGENTS.md plus docs/PHASED_DEVELOPMENT_PLAN.md and docs/DEVELOPMENT_PROGRESS.md as the source of truth for implementation order, architecture guardrails, and live phase tracking.",
+  "citations": [
+    "/Users/centillionaire/WORK/event-flow/AGENTS.md",
+    "/Users/centillionaire/WORK/event-flow/docs/PHASED_DEVELOPMENT_PLAN.md",
+    "/Users/centillionaire/WORK/event-flow/docs/DEVELOPMENT_PROGRESS.md"
+  ],
+  "reason": "Future coding and review tasks in this repo should consult these files first to stay aligned with the frontend-first phased plan and regression rules.",
+  "category": "workflow"
+}

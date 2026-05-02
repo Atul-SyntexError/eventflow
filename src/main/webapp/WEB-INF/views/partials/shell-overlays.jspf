@@ -1,0 +1,33 @@
+<aside id="notification-tray-panel" class="popover-panel notification-tray" data-notification-panel hidden>
+  <div class="popover-head">
+    <div class="stack-sm">
+      <p class="eyebrow">Notifications</p>
+      <p class="panel-title">Live update shell</p>
+    </div>
+    <span class="badge badge-neutral" data-notification-panel-count>0 unread</span>
+  </div>
+  <ul class="notification-stack" data-notification-list>
+    <li class="notification-item">
+      <strong>No notifications yet</strong>
+      <span class="notification-meta">A mock session will populate this tray.</span>
+    </li>
+  </ul>
+</aside>
+
+<aside id="user-menu-panel" class="popover-panel user-menu-panel" data-user-menu-panel hidden>
+  <div class="popover-head">
+    <div class="stack-sm">
+      <p class="eyebrow">Session controls</p>
+      <p class="panel-title">Preview account</p>
+    </div>
+  </div>
+  <div class="user-summary">
+    <strong data-user-summary-name>Guest preview</strong>
+    <span class="user-meta" data-user-summary-role>No active role</span>
+    <span class="user-meta" data-user-summary-email>No email</span>
+  </div>
+  <div class="button-row">
+    <a class="button button-secondary" href="${pageContext.request.contextPath}/login.jsp">Switch account</a>
+    <button type="button" class="button button-ghost" data-logout-preview>Sign out preview</button>
+  </div>
+</aside>

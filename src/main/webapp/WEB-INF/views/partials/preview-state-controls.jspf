@@ -1,0 +1,25 @@
+<div class="preview-state-controls">
+  <div class="stack-sm">
+    <p class="panel-title">Preview states</p>
+    <p class="text-muted">Switch between ready, loading, empty, and error views before backend wiring starts.</p>
+  </div>
+  <div class="segmented-control" aria-label="Preview states">
+    <button class="segmented-pill is-active" type="button" data-preview-state-button data-state="ready" aria-pressed="true">Ready</button>
+    <button class="segmented-pill" type="button" data-preview-state-button data-state="loading" aria-pressed="false">Loading</button>
+    <button class="segmented-pill" type="button" data-preview-state-button data-state="empty" aria-pressed="false">Empty</button>
+    <button class="segmented-pill" type="button" data-preview-state-button data-state="error" aria-pressed="false">Error</button>
+  </div>
+</div>
+
+<div class="preview-state-summary">
+  <span class="badge badge-neutral" data-preview-state-label>Ready</span>
+  <span class="text-muted preview-state-copy" data-preview-state-copy>Showing active mock data.</span>
+</div>
+
+<div class="retry-panel preview-state-panel" data-preview-state-panel hidden>
+  <strong data-preview-state-panel-title>Preview state panel</strong>
+  <span data-preview-state-panel-message>Switch back to ready data when needed.</span>
+  <div class="button-row">
+    <button class="button button-secondary" type="button" data-preview-state-reset>Return to ready data</button>
+  </div>
+</div>

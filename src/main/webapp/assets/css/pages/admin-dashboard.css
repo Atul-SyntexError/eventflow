@@ -1,0 +1,119 @@
+.dashboard-grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.dashboard-section {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.health-hero {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.health-score-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.health-score-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(5.75rem, 9vw, 7rem);
+  height: clamp(5.75rem, 9vw, 7rem);
+  border-radius: 2rem;
+  background: linear-gradient(160deg, rgba(223, 243, 237, 0.94), rgba(255, 255, 255, 0.78));
+  border: 1px solid rgba(15, 108, 93, 0.18);
+  color: var(--accent-strong);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 800;
+}
+
+.health-detail {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.health-signal-list,
+.risk-list,
+.admin-feed-list,
+.admin-user-list,
+.report-preview-list {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.health-signal,
+.risk-item,
+.admin-feed-item,
+.admin-user-item,
+.report-preview-item {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(221, 213, 198, 0.72);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.signal-meta,
+.risk-meta,
+.feed-meta,
+.user-meta-row,
+.report-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.health-mini-grid,
+.report-card-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.health-mini-card,
+.report-card {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: rgba(248, 245, 239, 0.92);
+  border: 1px solid rgba(221, 213, 198, 0.78);
+}
+
+.metric-trend {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.admin-gate {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.admin-gate[hidden] {
+  display: none;
+}
+
+@media (max-width: 64rem) {
+  .health-mini-grid,
+  .report-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "subject": "Role-based frontend preview pages",
+  "fact": "Role-based JSP preview pages should reuse src/main/webapp/assets/js/components/mock-role-page.js for session and shell gating, src/main/webapp/assets/js/components/mock-preview-state.js plus WEB-INF/views/partials/preview-state-controls.jspf for ready/loading/empty/error UI, and src/main/webapp/assets/js/components/mock-organizer-utils.js for organizer status grouping instead of duplicating page boot logic.",
+  "citations": [
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/assets/js/components/mock-role-page.js",
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/assets/js/components/mock-preview-state.js",
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/WEB-INF/views/partials/preview-state-controls.jspf",
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/assets/js/components/mock-organizer-utils.js"
+  ],
+  "reason": "Future role modules will need the same gated mock-session boot path and preview-state coverage, and this convention prevents duplicate role-specific shell and state logic from spreading again.",
+  "category": "frontend-convention"
+}

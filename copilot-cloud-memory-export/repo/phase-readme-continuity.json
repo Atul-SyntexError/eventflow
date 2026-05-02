@@ -1,0 +1,11 @@
+{
+  "subject": "Phase documentation continuity",
+  "fact": "Implementation phases should maintain docs/phase-<n>/README.md files that summarize scope, audits, reusable decisions, and any deferred validation; docs/phase-0 remains the contract baseline, and active implementation phases now have phase-1 through phase-6 directories in docs/.",
+  "citations": [
+    "/Users/centillionaire/WORK/event-flow/AGENTS.md",
+    "/Users/centillionaire/WORK/event-flow/docs/DEVELOPMENT_PROGRESS.md",
+    "/Users/centillionaire/WORK/event-flow/docs/phase-6/README.md"
+  ],
+  "reason": "Future work and code reviews need a consistent place to look for phase-level decisions and deferred checks so the repo does not drift back into undocumented implementation phases.",
+  "category": "process-convention"
+}

@@ -1,0 +1,11 @@
+{
+  "subject": "Local database migration workflow",
+  "fact": "This repository does not auto-run SQL migrations on application startup; new files under src/main/resources/db/migration must be applied manually to the local MySQL eventflow schema before runtime validation that depends on them.",
+  "citations": [
+    "/Users/centillionaire/WORK/event-flow/pom.xml",
+    "/Users/centillionaire/WORK/event-flow/docs/phase-9/README.md",
+    "/Users/centillionaire/WORK/event-flow/docs/phase-10/README.md"
+  ],
+  "reason": "Future runtime smokes can fail with servlet or DAO errors when schema changes exist in the repo but the local database has not been updated yet.",
+  "category": "database"
+}

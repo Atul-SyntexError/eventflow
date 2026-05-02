@@ -1,0 +1,46 @@
+<header class="app-topbar">
+  <div class="topbar-leading">
+    <button
+      type="button"
+      class="button button-ghost button-icon"
+      aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+      data-nav-toggle
+    >
+      Menu
+    </button>
+    <div class="stack-sm">
+      <span class="eyebrow" data-topbar-eyebrow>Shared shell</span>
+      <p class="text-strong"><strong data-topbar-title>Design system preview</strong></p>
+    </div>
+  </div>
+
+  <div class="topbar-actions">
+    <!-- Theme Toggle -->
+    <button type="button" class="button button-ghost button-icon utility-button" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark')" aria-label="Toggle theme">
+      &#9728;&#65039; / &#127769;
+    </button>
+    <div class="utility-group">
+      <button
+        type="button"
+        class="button button-ghost utility-button"
+        aria-expanded="false"
+        aria-controls="notification-tray-panel"
+        data-notification-toggle
+      >
+        Notifications
+        <span class="utility-badge" data-notification-count>0</span>
+      </button>
+      <button
+        type="button"
+        class="button button-secondary utility-button"
+        aria-expanded="false"
+        aria-controls="user-menu-panel"
+        data-user-menu-toggle
+      >
+        <span data-session-user-label>Preview user</span>
+      </button>
+    </div>
+  </div>
+</header>

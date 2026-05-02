@@ -1,0 +1,11 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="EventFlow design system foundation with shared shell, tokens, and reusable UI primitives."
+/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css" />
+<script src="${pageContext.request.contextPath}/assets/js/api/mock-api-fixtures.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/api/mock-api-client.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/api/mock-polling.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/api/mock-refresh-controller.js"></script>

@@ -1,0 +1,37 @@
+.preview-state-shell {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.preview-state-controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.preview-state-shell .segmented-control {
+  flex-wrap: wrap;
+}
+
+.preview-state-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.preview-state-copy {
+  max-width: 42rem;
+}
+
+.preview-state-panel[hidden] {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  .preview-state-controls {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+package com.eventflow.model;
+
+public enum NotificationType {
+  TASK_ASSIGNED,
+  TASK_UPDATED,
+  EVENT_UPDATED,
+  SCHEDULE_CHANGED,
+  RISK_ALERT,
+  CHECKIN_REMINDER,
+  GENERAL_ANNOUNCEMENT
+}

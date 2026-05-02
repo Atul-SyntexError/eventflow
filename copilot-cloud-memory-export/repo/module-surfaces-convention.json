@@ -1,0 +1,12 @@
+{
+  "subject": "Shared frontend module styling",
+  "fact": "Generic cross-role filter, detail, and module layout classes should live in src/main/webapp/assets/css/components/module-surfaces.css and be imported from main.css, not from role-specific page stylesheets.",
+  "citations": [
+    "src/main/webapp/assets/css/components/module-surfaces.css",
+    "src/main/webapp/assets/css/main.css",
+    "docs/phase-1/README.md",
+    "docs/phase-3/README.md"
+  ],
+  "reason": "Future role pages and audits need a stable styling boundary so generic UI primitives are not reintroduced under admin, organizer, volunteer, or student page-scoped CSS files.",
+  "category": "convention"
+}

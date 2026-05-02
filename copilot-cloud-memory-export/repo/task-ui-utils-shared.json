@@ -1,0 +1,11 @@
+{
+  "subject": "Task-driven role preview pages",
+  "fact": "Task-driven preview pages should reuse src/main/webapp/assets/js/components/mock-task-ui-utils.js for role gate copy, task status badges, priority badges, notification variants, and grouped task lanes; organizer pages already depend on it and volunteer pages were built on the same helper.",
+  "citations": [
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/assets/js/components/mock-task-ui-utils.js",
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/assets/js/pages/organizer-tasks.js",
+    "/Users/centillionaire/WORK/event-flow/src/main/webapp/assets/js/pages/volunteer-tasks.js"
+  ],
+  "reason": "Future task-centric role modules and code reviews need to avoid reintroducing role-specific task helper duplication after the Phase 5 refactor.",
+  "category": "frontend-convention"
+}

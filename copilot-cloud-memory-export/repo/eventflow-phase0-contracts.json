@@ -1,0 +1,12 @@
+{
+  "subject": "EventFlow Phase 0 contracts",
+  "fact": "Phase 0 artifacts are complete under docs/phase-0/, and future implementation tasks should use those docs for user journeys, IA, DTOs, endpoints, schema, validation, enums, and regression governance before starting frontend work.",
+  "citations": [
+    "/Users/centillionaire/WORK/event-flow/docs/phase-0/README.md",
+    "/Users/centillionaire/WORK/event-flow/docs/phase-0/DTO_CONTRACTS.md",
+    "/Users/centillionaire/WORK/event-flow/docs/phase-0/API_ENDPOINT_CATALOG.md",
+    "/Users/centillionaire/WORK/event-flow/docs/DEVELOPMENT_PROGRESS.md"
+  ],
+  "reason": "This is the repository baseline for all Phase 1+ implementation tasks and prevents drift from the approved frontend-first contracts.",
+  "category": "workflow"
+}

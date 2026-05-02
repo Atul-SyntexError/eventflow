@@ -1,0 +1,1 @@
+- Next.js OG image not showing: check rendered meta tags for localhost URLs from metadataBase fallback; set a production-safe default URL in root metadata.

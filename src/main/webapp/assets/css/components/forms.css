@@ -1,0 +1,189 @@
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 2.9rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  font-weight: 700;
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button.is-loading {
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.button-primary:hover {
+  background: var(--accent-strong);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: var(--border-subtle);
+  color: var(--text-strong);
+}
+
+.button-ghost {
+  color: var(--text-base);
+  background: transparent;
+  border-color: rgba(199, 188, 170, 0.55);
+}
+
+.button-danger {
+  background: var(--danger);
+  color: #fff7f6;
+}
+
+.button-icon {
+  min-width: 2.9rem;
+  padding-inline: 0.8rem;
+}
+
+.form-shell {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.form-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field-label {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.field-hint {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.control,
+.select-control,
+.textarea-control {
+  width: 100%;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text-strong);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.76);
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.control,
+.select-control {
+  min-height: 3rem;
+  padding: 0.85rem 1rem;
+}
+
+.textarea-control {
+  min-height: 7.5rem;
+  padding: 0.95rem 1rem;
+  resize: vertical;
+}
+
+.control:focus,
+.select-control:focus,
+.textarea-control:focus {
+  border-color: rgba(15, 108, 93, 0.44);
+  box-shadow: 0 0 0 4px rgba(15, 108, 93, 0.12);
+}
+
+.control[disabled],
+.select-control[disabled],
+.textarea-control[disabled] {
+  color: var(--text-soft);
+  background: #f2eee6;
+  cursor: not-allowed;
+}
+
+.field-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+
+.field-success {
+  color: var(--success);
+  font-size: 0.85rem;
+}
+
+.checkbox-line {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: var(--text-base);
+}
+
+.checkbox-line input {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.22rem;
+  accent-color: var(--accent);
+}
+
+.segmented-control {
+  display: inline-flex;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(221, 213, 198, 0.7);
+}
+
+.segmented-pill {
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.segmented-pill.is-active {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+@media (max-width: 64rem) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
